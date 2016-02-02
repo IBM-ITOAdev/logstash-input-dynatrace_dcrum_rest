@@ -30,7 +30,7 @@ The API will be called by this interval.  If it's not present then 60 seconds is
 ### input_file
 Type: string
 
-The json file at the input of the HTTP POST request.  For the definition of the input file please refer to https://community.dynatrace.com/community/display/DCRUM123/getDMIData3
+The json file as the input of the HTTP POST request.  For the definition of the parameters in this file please refer to https://community.dynatrace.com/community/display/DCRUM123/getDMIData3
 
 Here is a sample input file:
 ```
