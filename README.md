@@ -95,7 +95,7 @@ output {
 
 ```
 ## Sample scacsv output
-The file name is: dcrum_rest__1601130816+1100__1601131551+1100.csv
+File name: *dcrum_rest__1601130816+1100__1601131551+1100.csv*
 ```
 Operation,Time,Client RTT
 All other operations,01/13/2016 08:16,7.400000095367432
@@ -106,3 +106,4 @@ All other operations,01/13/2016 08:17,7.599999904632568
 http://a.b.c.d/sap(zt1vreu0tvrjmlgxowzymtlmtvrvne1qttnwbmdma2cyeldgtghbqufbq3zdtvfnpt0=)/bc/bsp/sap/crm_ui_frame/bspwdapplication.do,01/13/2016 08:17,7.5
 http://a.b.c.d/sap/bc/bsp/sap/crmcmp_hdr/bspwdapplication.do,01/13/2016 08:17,7.400000095367432
 ```
+This file can then be picked up by the Predictive Insights mediation tool for further processing and ingestion.
