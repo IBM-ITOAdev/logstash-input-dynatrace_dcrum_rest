@@ -1,11 +1,13 @@
 # logstash-input-dynatrace_dcrum_rest
 
-Logstash plugin for Dynatrace DC RUM REST API
-
+Logstash plugin for Dynatrace DC RUM REST API.
+## Prerequisites
+This plugin is developed and tested on Logstash 1.4.2 on Redhat linux server. It uses the curl command to do the HTTP requests.
 ## The API
-
-The official REST API link: https://community.dynatrace.com/community/display/DCRUM123/Using+REST-based+Web+Services
-
+Please check out [The official DCRUM REST API](https://community.dynatrace.com/community/display/DCRUM123/Using+REST-based+Web+Services) documentation for details.
+This plugin calls the [*getDMIData3*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getDMIData%2C+getDMIData2%2C+getDMIData3) function.
+## How it works
+The plugin will call the API through curl command at the interval defined in the parameter. The resolution of metrics on DCRUM can be found out via the [*getResolutions*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getResolutions). *IBM Predictive Insights* prefers finer resolutions such as one minute or five minutes so the interval of the polling should also be defined accordingly.
 ## Parameters
 ### hostname
 Type: string
