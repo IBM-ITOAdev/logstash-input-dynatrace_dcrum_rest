@@ -1,9 +1,7 @@
 # encoding: utf-8                                                               
 ########################################################
-#
-# 
 # Logstash mediation input for Dynatrace DC RUM REST API
-#
+# Author: Larry Song (larryls@au1.ibm.com)
 ########################################################
 require "logstash/inputs/base"
 require "logstash/namespace"
