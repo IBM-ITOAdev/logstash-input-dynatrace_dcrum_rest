@@ -2,12 +2,12 @@
 
 Logstash plugin for Dynatrace DC RUM REST API.
 ## Prerequisites
-This plugin is developed and tested on Logstash 1.4.2 on Redhat linux server. It uses the curl command to do the HTTP requests.
+This plugin is developed and tested on Logstash 1.4.2 on Redhat linux server. It uses the [*curl*](https://en.wikipedia.org/wiki/CURL) command to do the HTTP requests.
 ## The API
-Please check out [The official DCRUM REST API](https://community.dynatrace.com/community/display/DCRUM123/Using+REST-based+Web+Services) documentation for details.
-This plugin calls the [*getDMIData3*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getDMIData%2C+getDMIData2%2C+getDMIData3) function.
+Please check out [The official DCRUM REST API](https://community.dynatrace.com/community/display/DCRUM123/Using+REST-based+Web+Services) documentation for more details.
+This plugin calls the [*getDMIData3*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getDMIData%2C+getDMIData2%2C+getDMIData3) function to get the metrics.
 ## How it works
-The plugin will call the API through curl command at the interval defined in the parameter. The resolution of metrics on DCRUM can be found out via the [*getResolutions*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getResolutions). *IBM Predictive Insights* prefers finer resolutions such as one minute or five minutes so the interval of the polling should also be defined accordingly.
+The plugin will call the API through curl command at the interval defined in the parameter. The resolution of metrics on DCRUM can be found out via the [*getResolutions*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getResolutions) function. *IBM Predictive Insights* prefers finer resolutions such as one minute or five minutes so the interval of the polling should also be defined accordingly.  The query input is defined in the json file as defined in the *input_file* parameter (see below).
 ## Parameters
 ### hostname
 Type: string
