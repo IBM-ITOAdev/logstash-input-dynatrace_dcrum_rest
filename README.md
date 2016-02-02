@@ -1,8 +1,9 @@
 # logstash-input-dynatrace_dcrum_rest
-
 Logstash plugin for Dynatrace DC RUM REST API.
 ## Prerequisites
 This plugin is developed and tested on Logstash 1.4.2 on Redhat linux server. It uses the [*curl*](https://en.wikipedia.org/wiki/CURL) command to do the HTTP requests.
+## How to use it
+The simple way is just to download [the plugin file](https://github.com/IBM-ITOAdev/logstash-input-dynatrace_dcrum_rest/blob/master/lib/logstash/inputs/dcrum_rest.rb) and copy it into the logstash inputs directory such as $LOGSTASH_HOME/lib/logstash/inputs/.  Logstash is then able to locate this plugin once it's called.
 ## The API
 Please check out [The official DCRUM REST API](https://community.dynatrace.com/community/display/DCRUM123/Using+REST-based+Web+Services) documentation for more details.
 This plugin calls the [*getDMIData3*](https://community.dynatrace.com/community/display/DCRUM123/Example+REST+getDMIData%2C+getDMIData2%2C+getDMIData3) function to get the metrics.
