@@ -9,6 +9,7 @@ The official REST API link: https://community.dynatrace.com/community/display/DC
 ## Parameters
 ### hostname
 Type: string
+
 The host that services the API.
 ### port
 Type: number
