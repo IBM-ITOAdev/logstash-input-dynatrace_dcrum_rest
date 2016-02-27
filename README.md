@@ -108,3 +108,6 @@ http://a.b.c.d/sap(zt1vreu0tvrjmlgxowzymtlmtvrvne1qttnwbmdma2cyeldgtghbqufbq3zdt
 http://a.b.c.d/sap/bc/bsp/sap/crmcmp_hdr/bspwdapplication.do,01/13/2016 08:17,7.400000095367432
 ```
 This file can then be picked up by the Predictive Insights mediation tool for further processing and ingestion.
+
+## Work with IBM Operations Analytics - Predictive Insights
+Integration with PI is not guaranteed to work!  This is because DCRUM works like a sniffer that if there is no activity on the network then natually nothing will be generated for certain KPIs and in consequence those KPIs will likely to be discarded by PI.
